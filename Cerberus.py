@@ -385,7 +385,7 @@ if(rad == 'Home'):
                     st.session_state.langlist.append('ur')
 
                st.write(st.session_state.langlist)
-
+               destlist = translatetolang(input_text, st.session_state.langlist)
                GenrateVID(destlist, st.session_state.langlist)
 # favorite_command = edited_df.loc[edited_df["rating"].idxmax()]["command"]
 # st.markdown(f"Your favorite command is **{favorite_command}** 🎈")
